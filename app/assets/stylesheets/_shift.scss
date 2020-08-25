@@ -1,0 +1,65 @@
+.main{
+  height: 100vh;
+  background-color: #EEEEEE;
+  padding-top: 20px;
+}
+
+.btn-primary{
+  margin: 10px;
+}
+.shop-name, .input-month{
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 350px;
+}
+
+table{
+  overflow: scroll;
+  background-color: #fff;
+}
+table.table-fixed{
+  border: 3px solid;
+  margin-top: 30px;
+}
+.table-fixed tr:nth-child(odd) th:first-child{
+  position: sticky;  
+  position: -webkit-sticky;
+  left: 0;
+}
+.table-fixed tr:nth-of-type(odd) th:first-child {
+  background-color: #eee;
+}
+
+.table > tbody > tr > th{
+  vertical-align: middle;
+}
+.table > tbody > tr > th.border-right{
+  border-right: 3px double;
+}
+tr:nth-of-type(odd){
+  border-top: 3px solid;
+}
+tr:last-child{
+  border-bottom: 3px solid;
+}
+
+// .table-bordered > tbody > tr:nth-last-child(2) > th{
+//   border-bottom: 3px solid;
+// }
+
+th, td{
+  text-align: center
+}
+td.font-bold{
+  font-weight: bold;
+}

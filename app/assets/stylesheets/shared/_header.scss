@@ -1,11 +1,17 @@
 .header{
   background-color: #337ab7;
-  color: #fff;
   height: 50px;
   padding-left: 20px;
   margin-bottom: 5px;
-  h1{
-    margin: 0;
-    line-height: 50px;
+  a{
+    color: #fff;
+    text-decoration: none;
+    h1{
+      margin: 0;
+      line-height: 50px;
+    }
+  }
+  a:hover{
+    color: lightgray;
   }
 }

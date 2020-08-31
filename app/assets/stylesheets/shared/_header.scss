@@ -3,15 +3,22 @@
   height: 50px;
   padding-left: 20px;
   margin-bottom: 5px;
-  a{
+  .header-link{
     color: #fff;
     text-decoration: none;
+    float: left;
     h1{
       margin: 0;
       line-height: 50px;
     }
   }
-  a:hover{
+  .header-link:hover{
     color: lightgray;
+  }
+  .btn-danger{
+    float: right;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 10px;
   }
 }

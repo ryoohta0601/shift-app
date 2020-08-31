@@ -1,5 +1,11 @@
 <div class="header">
-  <%= link_to root_path do %>
+  <%= link_to root_path, class: 'header-link' do %>
     <h1>Shift-app</h1>
+
+    <%= link_to destroy_user_session_path, method: :delete do %>
+      <button type="button" class="btn btn-danger">ログアウト</button>
+    <% end %>
   <% end %>
+
+
 </div>

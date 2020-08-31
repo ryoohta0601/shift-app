@@ -17,3 +17,29 @@
     }
   }
 }
+
+.main-registrations{
+  background-color: #EEEEEE;
+  height: 100%;
+  .main-new{
+    .inner{
+      width: 700px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 24px 40px 40px;
+      label{
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .actions{
+        margin-top: 50px;
+        input{
+          font-size: 20px;
+          background-color: #3CCACE;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

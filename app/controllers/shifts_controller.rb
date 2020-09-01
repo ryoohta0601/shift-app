@@ -1,7 +1,6 @@
 class ShiftsController < ApplicationController
 
   def index
-    
     @user = User.find(1)
   end
   
@@ -10,18 +9,17 @@ class ShiftsController < ApplicationController
   end
 
   def new
-    @shift = Shift.new
   end
 
   def create
     Shift.create(shift_params)
-    redirect_to shift_path
+    @shift = Shift.new
   end
 
   private
 
   def shift_params
-    params.require(:shift).permit(:date, :start_time, :end_time, :user_id)
+    params.require(:shift).permit(:date, :start_time, :end_time).merge(user_id: current_user.id)
   end
-  
+
 end

@@ -1,12 +1,14 @@
-<% if false %>
-   <div class="main">
-    <%= render partial: 'shared/header' %>
-    <%= link_to new_shifts_path do %>
-      <button type="button" class="btn btn-primary">シフト提出</button></a>
-    <% end %>
-    <button type="button" class="btn btn btn-warning">シフト編集</button>
-    <%= month_calendar do |date| %>
-      <%= date.day %>
-    <% end %>
-  </div>
-<% end %>
+<div class="main">
+  <%= render partial: 'shared/header' %>
+  <%= link_to new_shift_path do %>
+    <button type="button" class="btn btn-primary">シフト提出</button></a>
+  <% end %>
+  <button type="button" class="btn btn btn-warning">シフト編集</button>
+  <%= month_calendar do |date| %>
+    <%= date.day %>
+  <% end %>
+
+  <% @shifts.each do |shift| %>
+    <%= shift.date %>
+  <% end %>
+</div>

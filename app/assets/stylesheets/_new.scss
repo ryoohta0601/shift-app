@@ -18,28 +18,28 @@
       }
       div{
         text-align: center;
-      }
-      input{
-        display: inline-block;
-        font-size: 20px;
-        font-weight: normal;
-        text-align: center;
-        vertical-align: middle;
-        background-image: none;
-        border: 1px solid;
-        white-space: nowrap;
-        padding: 6px 12px;
-        font-size: 14px;
-        line-height: 1.428571429;
-        border-radius: 4px;
-        width: 350px;
-        height: 50px;
-      }
-      .submit-btn{
-        background-color: red;
-        color: #fff;
-        font-size: 20px;
-        margin-top: 150px;
+        input, form{
+          display: inline-block;
+          font-size: 20px;
+          font-weight: normal;
+          text-align: center;
+          vertical-align: middle;
+          background-image: none;
+          border: 1px solid;
+          white-space: nowrap;
+          padding: 6px 12px;
+          font-size: 14px;
+          line-height: 1.428571429;
+          border-radius: 4px;
+          width: 350px;
+          height: 50px;
+        }
+        .submit-btn{
+          background-color: red;
+          color: #fff;
+          font-size: 20px;
+          margin-top: 150px;
+        }
       }
     }
   }

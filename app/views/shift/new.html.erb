@@ -3,15 +3,15 @@
   <div class="main-new">
     <div class="inner">
       <div class="inner-content">
-        <%= form_tag('/shift', method: :post) do %> 
+        <%= form_with model: @shift, :url => { :controller => :shift, :action => :create } do |f| %>
           <h2>シフト登録</h2>
           <h3>勤務日入力</h3>
-          <div><input type="date" class="input-date" required></div>
+          <div><%= f.date_field :date, class: "input-date" %></div>
           <h3>出勤時刻</h3>
-          <div><input type="time" value="17:00" required></div>
+          <div><%= f.time_field :start_time, class: "input-start" %></div>
           <h3>退勤時刻</h3>
-          <div><input type="time" value="20:00" required></div>
-          <div><input type="submit" class="submit-btn" value="登録"></div>
+          <div><%= f.time_field :end_time, class: "input-end" %></div>
+          <div><%= f.submit "登録", class: "submit-btn" %></div>
         <% end %>
       </div>
     </div>

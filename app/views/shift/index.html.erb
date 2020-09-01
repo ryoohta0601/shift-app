@@ -11,7 +11,7 @@
       <table class="table table-bordered table-fixed">
         <tr>
           <th rowspan="2" class="border-right">氏名</th>
-          <th rowspan="2">役職</th>
+          <%# <th rowspan="2">役職</th> %>
           <th>1</th>
           <th>2</th>
           <th>3</th>
@@ -79,8 +79,8 @@
         </tr>
         
         <tr>
-          <th rowspan="2" class="border-right">おおたりょう</th>
-          <th rowspan="2">ホール</th>
+          <th rowspan="2" class="border-right"><%= @user.name %></th>
+          <%# <th rowspan="2">ホール</th> %>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
@@ -149,7 +149,7 @@
         </tr>
         <tr>
           <th rowspan="2" class="border-right">おおたりょう</th>
-          <th rowspan="2">ホール</th>
+          <%# <th rowspan="2">ホール</th> %>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
@@ -218,7 +218,7 @@
         </tr>
         <tr>
           <th rowspan="2" class="border-right">おおたりょう</th>
-          <th rowspan="2">ホール</th>
+          <%# <th rowspan="2">ホール</th> %>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
@@ -287,7 +287,7 @@
         </tr>
         <tr>
           <th rowspan="2" class="border-right">おおたりょう</th>
-          <th rowspan="2">ホール</th>
+          <%# <th rowspan="2">ホール</th> %>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
@@ -356,7 +356,7 @@
         </tr>
         <tr>
           <th rowspan="2" class="border-right">おおたりょう</th>
-          <th rowspan="2">ホール</th>
+          <%# <th rowspan="2">ホール</th> %>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
@@ -425,7 +425,7 @@
         </tr>
         <tr>
           <th rowspan="2" class="border-right">おおたりょう</th>
-          <th rowspan="2">ホール</th>
+          <%# <th rowspan="2">ホール</th> %>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
           <td>１７：００〜</td>
@@ -494,7 +494,7 @@
         </tr>
         <tr>
           <th rowspan="3" class="border-right">TOTAL</th>
-          <th>ホール</th>
+          <%# <th>ホール</th> %>
           <td>2</td>
           <td>2</td>
           <td>2</td>
@@ -527,9 +527,9 @@
           <td>2</td>
           <td>2</td>
         </tr>
-        <tr>
-          <th>キッチン</th>
-          <td>1</td>
+        <%# <tr> %>
+          <%# <th>キッチン</th> %>
+          <%# <td>1</td>
           <td>1</td>
           <td>1</td>
           <td>1</td>
@@ -561,8 +561,9 @@
           <td>1</td>
           <td>1</td>
         </tr>
-        <tr>
-          <td class="font-bold">TOTAL</td>
+        <tr> %>
+          <%# <td class="font-bold">TOTAL</td> %>
+          <%# <td>3</td>
           <td>3</td>
           <td>3</td>
           <td>3</td>
@@ -593,8 +594,7 @@
           <td>3</td>
           <td>3</td>
           <td>3</td>
-          <td>3</td>
-        </tr>
+        </tr> %>
       </table>
     </div>
 </div>

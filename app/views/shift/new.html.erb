@@ -3,14 +3,16 @@
   <div class="main-new">
     <div class="inner">
       <div class="inner-content">
-        <h2>シフト登録</h2>
-        <h3>勤務日入力</h3>
-        <div><input type="date" class="input-date" required></div>
-        <h3>出勤時刻</h3>
-        <div><input type="time" value="17:00" required></div>
-        <h3>退勤時刻</h3>
-        <div><input type="time" value="20:00" required></div>
-        <div><input type="submit" class="submit-btn" value="登録"></div>
+        <%= form_tag('/shift', method: :post) do %> 
+          <h2>シフト登録</h2>
+          <h3>勤務日入力</h3>
+          <div><input type="date" class="input-date" required></div>
+          <h3>出勤時刻</h3>
+          <div><input type="time" value="17:00" required></div>
+          <h3>退勤時刻</h3>
+          <div><input type="time" value="20:00" required></div>
+          <div><input type="submit" class="submit-btn" value="登録"></div>
+        <% end %>
       </div>
     </div>
   </div>

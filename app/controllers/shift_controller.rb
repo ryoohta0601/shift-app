@@ -1,18 +1,22 @@
 class ShiftController < ApplicationController
 
   def index
+    @user = User.find(1)
   end
   
   def show
-    @shift = Shift.find(params[:id])
   end
 
   def new
   end
 
+  def create
+    Shift.create(shift_params)
+  end
+
   private
 
   def shift_params
-      params.require(:shifts).permit(:name)
+    params.permit(:date, :start_time, :end_time, :user_id)
   end
 end

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   resources :shift, only: [:index, :show, :new] do
   end
+
+  post 'shift', to: 'shift#create'
 end

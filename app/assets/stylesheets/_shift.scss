@@ -50,7 +50,7 @@ table.table-fixed{
 .table > tbody > tr > th.border-right{
   border-right: 3px double;
 }
-tr:nth-of-type(odd){
+.table-bordered tr:nth-of-type(odd){
   border-top: 3px solid;
 }
 tr:last-child{

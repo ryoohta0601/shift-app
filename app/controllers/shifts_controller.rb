@@ -1,4 +1,4 @@
-class ShiftController < ApplicationController
+class ShiftsController < ApplicationController
 
   def index
     
@@ -23,4 +23,5 @@ class ShiftController < ApplicationController
   def shift_params
     params.require(:shift).permit(:date, :start_time, :end_time, :user_id)
   end
+  
 end

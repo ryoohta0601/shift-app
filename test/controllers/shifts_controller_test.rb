@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ShiftControllerTest < ActionDispatch::IntegrationTest
+class ShiftsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

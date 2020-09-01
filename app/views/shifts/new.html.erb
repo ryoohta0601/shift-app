@@ -3,7 +3,7 @@
   <div class="main-new">
     <div class="inner">
       <div class="inner-content">
-        <%= form_with model: @shift, :url => { :controller => :shift, :action => :create } do |f| %>
+        <%= form_with model: @shift, :url => { :controller => :shifts, :action => :create } do |f| %>
           <h2>シフト登録</h2>
           <h3>勤務日入力</h3>
           <div><%= f.date_field :date, class: "input-date" %></div>

@@ -1,1 +1,7 @@
-<h2>登録完了</h2>
+<div class="main">
+  <%= render partial: 'shared/header' %>
+  <h2>登録完了</h2>
+  <% @shifts.each do |shift| %>
+    <%= shift.date %>
+  <% end %>
+</div>

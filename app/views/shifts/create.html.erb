@@ -1,7 +1,12 @@
 <div class="main">
   <%= render partial: 'shared/header' %>
   <h2>登録完了</h2>
+
   <% @shifts.each do |shift| %>
     <%= shift.date %>
+    <%= shift.start_time.to_s(:time) %>~
+    <%= shift.end_time.to_s(:time) %>
   <% end %>
+
+  
 </div>

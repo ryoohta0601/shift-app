@@ -5,8 +5,12 @@ Rails.application.routes.draw do
     root "devise/sessions#new"
   end
 
+  
   resources :shifts, only: [:index, :show, :new, :create] do
   end
-
-  # post 'shift/new' => 'shift#new'
+  
+  resources :user, only: [:show, :edit, :update]do
+    resources :shifts
+  end
+  # post 'shifts/new' => 'shifts#new'
 end

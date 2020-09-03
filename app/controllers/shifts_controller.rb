@@ -1,19 +1,23 @@
 class ShiftsController < ApplicationController
 
   def index
-    @user = User.find(1)
+    @users = User.all
+    @shifts = Shift.all
+    # @shift[:start_time] = Date.today.strftime('%Y-%m-%d')
   end
   
   def show
+    @users = User.all
     @shifts = Shift.all
   end
 
   def new
+    @shift = Shift.new
   end
 
   def create
     Shift.create(shift_params)
-    @shift = Shift.new
+    @shifts = Shift.last(1)
   end
 
   private

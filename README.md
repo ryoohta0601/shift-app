@@ -11,8 +11,7 @@
 ## shiftsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|date|date|null: false|
-|start_time|time|null: false|
+|start_time|datetime|null: false|
 |end_time|time|null: false|
 |user_id|integer|null: false, foreign_key: true|
 ### Association

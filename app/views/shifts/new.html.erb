@@ -6,9 +6,7 @@
         <%= form_with(model: @shift, local: true) do |f| %>
           <h2>シフト登録</h2>
           <h3>勤務日入力</h3>
-          <div><%= f.date_field :date, class: "input-date" %></div>
-          <h3>出勤時刻</h3>
-          <div><%= f.time_field :start_time, class: "input-start" %></div>
+          <div><%= f.datetime_field :start_time, class: "input-date" %></div>
           <h3>退勤時刻</h3>
           <div><%= f.time_field :end_time, class: "input-end" %></div>
           <div><%= f.submit "登録", class: "submit-btn" %></div>

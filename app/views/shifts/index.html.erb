@@ -7,14 +7,14 @@
 
   <% @shifts.each do |shift| %>
     <div>
-      <%= shift.start_time.to_s(:time) %>
+      <%= shift.start_time %>
     </div>
   <% end %>
   <%= month_calendar events: @shifts do |date, shifts| %>
     <%= date.day %>
     <% shifts.each do |shift| %>
       <div>
-        <%= shift.start_time.to_s(:time) %>
+        <%= shift.start_time %>
       </div>
     <% end %>
   <% end %>

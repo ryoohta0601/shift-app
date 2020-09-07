@@ -7,7 +7,7 @@ class ShiftsController < ApplicationController
   
   def show
     @users = User.all
-    @shifts = Shift.all
+    @shift = Shift.find(params[:id])
   end
 
   def new
@@ -16,7 +16,7 @@ class ShiftsController < ApplicationController
 
   def create
     Shift.create(shift_params)
-    @shifts = Shift.last(1)
+    redirect_to shifts_path
   end
 
   private

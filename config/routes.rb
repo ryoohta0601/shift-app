@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   end
 
   
-  resources :shifts, only: [:index, :show, :new, :create] do
-  end
+  resources :shifts
   
   resources :user, only: [:show, :edit, :update]do
     resources :shifts

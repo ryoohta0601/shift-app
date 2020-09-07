@@ -1,18 +1,24 @@
 <div class="main">
   <%= render partial: 'shared/header' %>
   <%= link_to new_shift_path do %>
-    <button type="button" class="btn btn-primary">シフト提出</button></a>
+    <button type="button" class="btn btn-primary">シフト提出</button>
   <% end %>
   <button type="button" class="btn btn btn-warning">シフト編集</button>
 
+  <% @shifts.each do |shift| %>
+        <%= shift.start_time.strftime("%Y-%m-%d %H:%M") %>
+        <%= link_to 'Show', shift %>
+        <%= link_to 'Edit', edit_shift_path(shift.id) %>
+        <%= link_to 'Destroy',shift_path(shift.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+
   <%= month_calendar events: @shifts do |date, shifts| %>
     <%= date.day %>
+
     <% shifts.each do |shift| %>
       <div>
-        <%= shift.start_time %>
+        <%= link_to shift.start_time, shift %>
       </div>
     <% end %>
   <% end %>
-
-  <%= current_user.name %>
 </div>

@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_05_005701) do
+ActiveRecord::Schema.define(version: 2020_09_05_080832) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "shifts", force: :cascade do |t|
+    t.datetime "start_time", null: false
     t.time "end_time", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.datetime "start_time"
     t.index ["user_id"], name: "index_shifts_on_user_id"
   end
 

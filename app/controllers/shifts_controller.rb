@@ -22,7 +22,7 @@ class ShiftsController < ApplicationController
   private
 
   def shift_params
-    params.require(:shift).permit(:start_time, :end_time).merge(user_id: current_user.id)
+    params.require(:shift).permit(:start_time, :out_time).merge(user_id: current_user.id)
   end
 
 end

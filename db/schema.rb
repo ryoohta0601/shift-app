@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_09_05_080832) do
 
   create_table "shifts", force: :cascade do |t|
     t.datetime "start_time", null: false
-    t.time "end_time", null: false
+    t.time "out_time", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

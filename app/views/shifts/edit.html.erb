@@ -1,0 +1,25 @@
+<div class="main">
+  <%= render partial: 'shared/header' %>
+  <div class="main-new">
+    <div class="inner">
+      <div class="inner-content">
+        <%= form_with(model: @event, local: true) do |f| %>
+          <h2>シフト登録</h2>
+          <h3>勤務日入力</h3>
+          <div>
+            <%= f.label :start_time %>
+            <%= f.datetime_field :start_time, class: "input-date" %>
+          </div>
+          <h3>退勤時刻</h3>
+          <div>
+            <%= f.label :end_time %>
+            <%= f.time_field :out_time, class: "input-end" %>
+          </div>
+          <div>
+            <%= f.submit "登録", class: "submit-btn" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

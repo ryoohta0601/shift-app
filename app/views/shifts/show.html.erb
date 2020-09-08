@@ -1,15 +1,29 @@
-<p id="notice"><%= notice %></p>
-
-
-<p>
-  <strong>時間</strong>
-  <%= @shift.start_time.strftime("%Y-%m-%d %H:%M") %>
-</p>
-
-<p>
-  <strong>内容</strong>
-  <%= @shift.out_time.to_s(:time) %>
-</p>
-
-<%= link_to 'Edit', edit_shift_path(@shift) %> |
-<%= link_to 'Back', shifts_path %>
+<div class="main">
+  <%= render partial: 'shared/header' %>
+  <div class="main-show">
+    <div class="inner">
+      <div class="inner-content">
+        <h2>勤務日</h2>
+        <div>
+          <%= @shift.start_time.strftime("%Y-%m-%d") %>
+        </div>
+        <h2>勤務時刻</h2>
+        <div>
+          <%= @shift.start_time.strftime("%H:%M") %>〜
+          <%= @shift.out_time.to_s(:time) %>
+        </div>
+        <div class="shift-links">
+          <%= link_to edit_shift_path(@shift), class: "edit-link" do %>
+            <button type="button" class="btn btn-warning">編集する</button>
+          <% end %>
+          <%= link_to shift_path(@shift), class: "destroy-link", method: :delete, data: { confirm: '本当に削除してもよろしいですか？' } do %>
+            <button type="button" class="btn btn-danger">削除する</button>
+          <% end %>
+          <%= link_to shifts_path, class: "back-link" do %>
+            <button type="button" class="btn btn-light">戻る</button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

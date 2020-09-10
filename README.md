@@ -9,8 +9,13 @@
  I thought that if I could automatically manage work shifts for all while creating a shift at a restaurant where I was a part-time job, I would think it would save time.
 <br>
 # Demo
+## New post action
 ![readme用_new](https://user-images.githubusercontent.com/63589113/92761820-feaf4a00-f3cc-11ea-95da-df8921629818.gif)
+## Edit action
 ![readme用_edit](https://user-images.githubusercontent.com/63589113/92758818-10dbb900-f3ca-11ea-9c27-33e542cc27f7.gif)
+## Delete action
+![readme用_destroy](https://user-images.githubusercontent.com/63589113/92761914-1686ce00-f3cd-11ea-96be-04b45c7d135d.gif)
+
 
 # Requirements
  rails 6.0.3.2<br>

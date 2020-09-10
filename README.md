@@ -9,6 +9,7 @@
  I thought that if I could automatically manage work shifts for all while creating a shift at a restaurant where I was a part-time job, I would think it would save time.
 <br>
 # Demo
+![readme用_new](https://user-images.githubusercontent.com/63589113/92761820-feaf4a00-f3cc-11ea-95da-df8921629818.gif)
 ![readme用_edit](https://user-images.githubusercontent.com/63589113/92758818-10dbb900-f3ca-11ea-9c27-33e542cc27f7.gif)
 
 # Requirements

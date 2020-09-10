@@ -10,6 +10,7 @@
 
     <% shifts.each do |shift| %>
       <div>
+        <%= shift.user.name %>
         <%= link_to shift.start_time.to_s(:time), shift %>〜
       </div>
     <% end %>

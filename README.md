@@ -1,5 +1,6 @@
 # shift-app
  This tool allows you to centrally manage your registered shifts.
+ https://shift-app-246.herokuapp.com/
  <br>
 
 # Description

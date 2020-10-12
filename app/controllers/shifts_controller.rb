@@ -1,5 +1,7 @@
 class ShiftsController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
     @shifts = Shift.all
   end
@@ -43,5 +45,4 @@ class ShiftsController < ApplicationController
   def shift_params
     params.require(:shift).permit(:start_time, :out_time).merge(user_id: current_user.id)
   end
-
 end

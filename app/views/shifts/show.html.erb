@@ -12,17 +12,19 @@
           <%= @shift.start_time.strftime("%H:%M") %>〜
           <%= @shift.out_time.to_s(:time) %>
         </div>
-        <div class="shift-links">
-          <%= link_to edit_shift_path(@shift), class: "edit-link" do %>
-            <button type="button" class="btn btn-warning">編集する</button>
-          <% end %>
-          <%= link_to shift_path(@shift), class: "destroy-link", method: :delete, data: { confirm: '本当に削除してもよろしいですか？' } do %>
-            <button type="button" class="btn btn-danger">削除する</button>
-          <% end %>
-          <%= link_to shifts_path, class: "back-link" do %>
-            <button type="button" class="btn btn-light">戻る</button>
-          <% end %>
-        </div>
+        <% if user_signed_in? && current_user.id == @shift.user.id %>
+          <div class="shift-links">
+            <%= link_to edit_shift_path(@shift), class: "edit-link" do %>
+              <button type="button" class="btn btn-warning">編集する</button>
+            <% end %>
+            <%= link_to shift_path(@shift), class: "destroy-link", method: :delete, data: { confirm: '本当に削除してもよろしいですか？' } do %>
+              <button type="button" class="btn btn-danger">削除する</button>
+            <% end %>
+        <% end %>
+            <%= link_to shifts_path, class: "back-link" do %>
+              <button type="button" class="btn btn-light">戻る</button>
+            <% end %>
+          </div>
       </div>
     </div>
   </div>
